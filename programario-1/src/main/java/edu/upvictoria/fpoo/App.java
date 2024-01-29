@@ -42,18 +42,16 @@ public class App
             System.out.print("[13] Pesos a dolares\n");
             System.out.print("[14] Calcular edad de un empleado\n");
             System.out.print("[15] Parquimetro\n");
-            System.out.print("[16] d\n");
-            System.out.print("[17] x\n");
-            System.out.print("[18] c\n");
-            System.out.print("[19] c\n");
-            System.out.print("[20] c\n");
-            System.out.print("[21] c\n");
-            System.out.print("[22] c\n");
-            System.out.print("[23] c\n");
-            System.out.print("[24] v\n");
-            System.out.print("[25] v\n");
-            System.out.print("[26] v\n");
-            System.out.println( "\n\nPOR PAQUETE:" );
+            System.out.print("[16] Cobro por pintar\n");
+            System.out.print("[17] Hipotenusa (Triangulo rectangulo)\n");
+            System.out.print("[18] Boleto de autobus\n");
+            System.out.print("[19] Calcular velocidad (bici)\n");
+            System.out.print("[20] Cobro por llamadas\n");
+            System.out.print("[21] Pago CONAGUA\n");
+            System.out.print("[22] Cobro del CLS\n");
+            System.out.print("[23] Compra de un producto\n");
+            System.out.print("[24] Calcular ahorro\n");
+            System.out.print("[25] Generar cheque\n");
             System.out.println( "\nSALIR [0]" );
 
             System.out.print("\nIngrese su eleccion: ");
@@ -164,6 +162,76 @@ public class App
                     do {
                         EjercicioQuince obj = new EjercicioQuince();
                         obj.parki();
+                        opc = pregunta();
+                    } while (opc == 0);
+                    break;
+                case 16:
+                    do {
+                        EjercicioDieciseis obj = new EjercicioDieciseis();
+                        obj.costo();
+                        opc = pregunta();
+                    } while (opc == 0);
+                    break;
+                case 17:
+                    do {
+                        EjercicioDiecisiete obj = new EjercicioDiecisiete();
+                        obj.hip();
+                        opc = pregunta();
+                    } while (opc == 0);
+                    break;
+                case 18:
+                    do {
+                        EjercicioDieciocho obj = new EjercicioDieciocho();
+                        obj.boleto();
+                        opc = pregunta();
+                    } while (opc == 0);
+                    break;
+                case 19:
+                    do {
+                        EjercicioDiecinueve obj = new EjercicioDiecinueve();
+                        obj.velBici();
+                        opc = pregunta();
+                    } while (opc == 0);
+                    break;
+                case 20:
+                    do {
+                        EjercicioVeinte obj = new EjercicioVeinte();
+                        obj.llamada();
+                        opc = pregunta();
+                    } while (opc == 0);
+                    break;
+                case 21:
+                    do {
+                        EjercicioVeintiuno obj = new EjercicioVeintiuno();
+                        obj.coangua();
+                        opc = pregunta();
+                    } while (opc == 0);
+                    break;
+                case 22:
+                    do {
+                        EjercicioVeintidos obj = new EjercicioVeintidos();
+                        obj.kw();
+                        opc = pregunta();
+                    } while (opc == 0);
+                    break;
+                case 23:
+                    do {
+                        EjercicioVeintitres obj = new EjercicioVeintitres();
+                        obj.producto();
+                        opc = pregunta();
+                    } while (opc == 0);
+                    break;
+                case 24:
+                    do {
+                        EjercicioVeinticuatro obj = new EjercicioVeinticuatro();
+                        obj.ahorro();
+                        opc = pregunta();
+                    } while (opc == 0);
+                    break;
+                case 25:
+                    do {
+                        EjercicioVeinticinco obj = new EjercicioVeinticinco();
+                        obj.cheque();
                         opc = pregunta();
                     } while (opc == 0);
                     break;

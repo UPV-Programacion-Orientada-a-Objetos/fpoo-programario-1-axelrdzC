@@ -3,21 +3,19 @@ package edu.upvictoria.fpoo;
 import java.io.*;
 
 public class EjercicioUno {
-    public void suma () throws IOException{
+    public void suma() throws IOException{
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        int num1, num2;
-
         System.out.print("ingrese el primer numero: ");
         String input = reader.readLine();
-        num1 = Integer.parseInt(input);
+        double a = Double.parseDouble(input);
 
         System.out.print("ingrese el segundo numero: ");
         input = reader.readLine();
-        num2 = Integer.parseInt(input);
+        double b = Double.parseDouble(input);
 
-        System.out.println(num1 + " + " + num2 + " = " + (num1+num2));
+        System.out.println(a + " + " + b + " = " + (a+b));
 
     }
 }
